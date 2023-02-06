@@ -1,0 +1,25 @@
+spring:
+  datasource:
+    url: jdbc:h2:file:~/Documents/H2_Databases/tictactoe_app/tictactoe_db
+    username: sa
+    password: password
+    driverClassName: org.h2.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+  h2:
+    console:
+      enabled: true
+      
+#spring.jpa.properties.hibernate.globally_quoted_identifiers=true
+    
+#spring.datasource.url=jdbc:h2:file:~/Documents/H2_Databases/tictactoe_app/tictactoe_db
+#spring.datasource.driverClassName=org.h2.Driver
+#spring.datasource.username=sa
+#spring.datasource.password=password
+#spring.jpa.database-platform=org.hibernate.dialect.H2Dialect
+#spring.jpa.hibernate.ddl-auto=create-drop
+#spring.h2.console.enabled=true
+
